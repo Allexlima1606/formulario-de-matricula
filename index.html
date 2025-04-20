@@ -16,6 +16,7 @@
         rel="stylesheet">
 
 </head>
+
 <body>
     <div id="app">
         <main>
@@ -25,7 +26,47 @@
                     <span class="back-text">Voltar</span>
                 </div>
                 <h1>Formulário de matrícula</h1>
-                <p>Preencha os dados abaixo para matricular seu filho  na escola de educação infantil Estrelas do Amanhã</p>
+                <p>
+                    Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã
+                </p>
+
+                <form action="" method="post" enctype="multipart/form-data">
+                    <fieldset class="child-info">
+                        <legend>Informações da criança</legend>
+
+                        <div class="input-wrapper">
+                            <label for="name">Nome completo</label>
+                            <input type="text" id="name" placeholder="Digite seu nome completo" required>
+                        </div>
+                        
+                        <div class="input-wrapper">
+                            <label for="date">Data de Nacimento</label>
+                            <input type="date" id="email" placeholder="Digite seu e-mail" required>
+                        </div>
+
+                        <div class="select-wrapper">
+                            <label for="Sexo">Sexo</label>
+                            <select id="Sexo" required>
+                                <option value="" disabled selected>Selecione o sexo</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="outro">Outro</option>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="medical-info">Informações Medicas</label>
+                            <textarea id="medical-info" cols="30" rows="10"
+                                placeholder="Digite informações medicas relevantes" required></textarea>
+                        </div>
+
+                        <div class="droparea-wrapper">
+                            <label for="droparea">Certidão de Nacimento</label>
+                            <input type="file" id="birth-file" name="birth-file">
+                            <img src="assets/icons/cloud-upload.svg" alt="Upload de arquivo" class="upload-icon">
+                            <p>Clique aqui para<br>selecionar arquivos</p>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </fieldset>
             </div>
         </main>
 
@@ -33,17 +74,18 @@
             <div class="aside.container">
                 <header>
                     <img src="assets/logo.svg" alt="Logo Estrelas do Amanhã" class="logo">
-                    <h2>Porque cada momento de 
+                    <h2>Porque cada momento de
                         <span>
                             aprendizado
                         </span>
-                         conta
+                        conta
                     </h2>
                     <p>
-                        Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.
+                        Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e
+                        estimulante.
                     </p>
                 </header>
-                    <img src="assets/pana.svg" alt="Imagem de crianças brincando" class="aside-image">
+                <img src="assets/pana.svg" alt="Imagem de crianças brincando" class="aside-image">
             </div>
         </aside>
     </div>
