@@ -1,9 +1,11 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Variáveis globais */
 :root {
     --font-family: 'Poppins', sans-serif;
     --text: 400 1rem/1.5 var(--font-family);
@@ -23,22 +25,26 @@
     --semantic-error: #DC2626;
 }
 
+/* Estilo base do corpo */
 body {
     overflow: hidden;
-
     font: var(--text);
     color: var(--text-secondary);
+    background-color: var(--surface-primary);
 }
 
+/* Títulos */
 h1, h2 {
     color: var(--text-primary);
 }
 
+/* Imagens */
 img {
     max-width: 100%;
     height: auto;
 }
 
+/* Classes utilitárias */
 .flex {
     display: flex;
 }
